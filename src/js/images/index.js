@@ -1,15 +1,15 @@
-import apiService from './apiService.js';
-import '../css/images.scss';
+import apiService from './utils/apiService.js';
+import '../../css/images.scss';
 
 import * as basicLightbox from 'basiclightbox';
-import '../../node_modules/basiclightbox/dist/basicLightbox.min.css';
+import '../../../node_modules/basiclightbox/dist/basicLightbox.min.css';
 
-import errorMsg from './message.js';
+import errorMsg from './utils/message.js';
 
-import formTemplate from '../templates/searchForm.hbs';
-import listTemplate from '../templates/imagesList.hbs';
-import cardTemplate from '../templates/imageCard.hbs';
-import nextBtnTemplate from '../templates/buttonLoadMore.hbs';
+import formTemplate from '../../templates/searchForm.hbs';
+import listTemplate from '../../templates/imagesList.hbs';
+import cardTemplate from '../../templates/imageCard.hbs';
+import nextBtnTemplate from '../../templates/buttonLoadMore.hbs';
 
 class Images {
   constructor(selector) {
